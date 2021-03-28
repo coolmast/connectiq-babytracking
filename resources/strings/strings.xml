@@ -13,4 +13,7 @@
     <string id="show">Show</string>
     <string id="time_to_feed">Time to feed!</string>
     <string id="in">in</string>
+    <string id="no_data">No data!</string>
+    <string id="feeds_day">Feeds / d</string>
+    <string id="feed_timeline">Regularity</string>
 </strings>

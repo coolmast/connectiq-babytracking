@@ -5,6 +5,11 @@ class BabyBehaviorDelegate extends WatchUi.BehaviorDelegate {
 		BehaviorDelegate.initialize();
 	}
 	
+	function onSelect() {
+		WatchUi.pushView(new FeedsPerDayView(), new StatsBehaviorDelegate(), WatchUi.SLIDE_IMMEDIATE);
+		return true;
+	}
+	
 	function onMenu() {
 		var menu = new WatchUi.Menu2({:title => "BabyTracking"});
 		var delegate;
