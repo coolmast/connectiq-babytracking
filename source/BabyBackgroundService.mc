@@ -1,4 +1,5 @@
 using Toybox.System;
+using Toybox.Application;
 
 (:background)
 class BabyBackgroundService extends System.ServiceDelegate {
@@ -7,7 +8,7 @@ class BabyBackgroundService extends System.ServiceDelegate {
 	}
 	function onTemporalEvent() {
 		System.println("notify");
-		Background.requestApplicationWake("Time to feed!");
+		Background.requestApplicationWake(Application.loadResource(Rez.Strings.time_to_feed));
 		Background.exit(null);
 	}
 }

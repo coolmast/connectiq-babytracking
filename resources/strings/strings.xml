@@ -11,7 +11,7 @@
     <string id="start_now">Start now</string>
     <string id="manual">Manual</string>
     <string id="show">Show</string>
-    <string id="time_to_feed">Time to feed!</string>
+    <string id="time_to_feed" scope="background">Time to feed!</string>
     <string id="in">in</string>
     <string id="no_data">No data!</string>
     <string id="feeds_day">Feeds / d</string>

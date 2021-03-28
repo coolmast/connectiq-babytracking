@@ -10,7 +10,8 @@ class BabyMenuInputDelegate extends WatchUi.Menu2InputDelegate {
 	}
 	
 	function updateTimer() {
-		var THREE_HOURS = new Time.Duration(3 * 60 * 60);
+		//var THREE_HOURS = new Time.Duration(3 * 60 * 60);
+		var THREE_HOURS = new Time.Duration(3 );
 		var alertTime = Time.now().add(THREE_HOURS);
 		Background.registerForTemporalEvent(alertTime);
 	}
