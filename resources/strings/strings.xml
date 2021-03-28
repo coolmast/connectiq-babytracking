@@ -1,0 +1,16 @@
+<strings>
+    <string id="AppName">BabyTracking</string>
+    <string id="last">Last</string>
+    <string id="feeding">feeding</string>
+    <string id="Feedings">Feedings</string>
+    <string id="Feeding">Feeding</string>
+    <string id="sleeping">sleeping</string>
+    <string id="Sleeping">Sleeping</string>
+    <string id="Sleeps">Sleeps</string>
+    <string id="really_delete">Really delete?</string>
+    <string id="start_now">Start now</string>
+    <string id="manual">Manual</string>
+    <string id="show">Show</string>
+    <string id="time_to_feed">Time to feed!</string>
+    <string id="in">in</string>
+</strings>
