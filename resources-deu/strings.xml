@@ -16,4 +16,5 @@
     <string id="no_data">Keine Daten!</string>
     <string id="feeds_day">Fütterung/d</string>
     <string id="feed_timeline">Regelmäßigkeit</string>
+    <string id="start_time">Startzeit</string>
 </strings>

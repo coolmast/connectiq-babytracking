@@ -15,7 +15,7 @@ class BabyMenuInputDelegate extends WatchUi.Menu2InputDelegate {
 		var alertTime = Time.now().add(THREE_HOURS);
 		Background.registerForTemporalEvent(alertTime);
 	}
-	
+	 
 	function onSelect(item) {
 		System.println(item.getId());
 		if (item.getId().equals("feedNow")) {
@@ -29,12 +29,9 @@ class BabyMenuInputDelegate extends WatchUi.Menu2InputDelegate {
 			WatchUi.requestUpdate();
 			WatchUi.popView(WatchUi.SLIDE_IMMEDIATE);
 		} else if (item.getId().equals("feedManual")) {
-			var feedPicker = new WatchUi.NumberPicker(
-				WatchUi.NUMBER_PICKER_TIME_OF_DAY,
-				0
-			);	
+			var feedPicker = new TimePicker(); 
 			WatchUi.pushView(feedPicker,
-				new BabyManualPickerDelegate("feedings"),
+				new TimePickerDelegate("feedings"),
 				WatchUi.SLIDE_IMMEDIATE);	
 		} else if (item.getId().equals("sleepNow")) {
 			var sleepings = Application.Storage.getValue("sleepings");
@@ -68,6 +65,7 @@ class BabyMenuInputDelegate extends WatchUi.Menu2InputDelegate {
 			}
 			WatchUi.pushView(menu, new BabyShowMenuInputDelegate("feedings"), WatchUi.SLIDE_IMMEDIATE);
 		} else if (item.getId().equals("sleepManual")) {
+			/*
 			var sleepPicker = new WatchUi.NumberPicker(
 				WatchUi.NUMBER_PICKER_TIME_OF_DAY,
 				0
@@ -75,6 +73,11 @@ class BabyMenuInputDelegate extends WatchUi.Menu2InputDelegate {
 			WatchUi.pushView(sleepPicker,
 				new BabyManualPickerDelegate("sleepings"),
 				WatchUi.SLIDE_IMMEDIATE);
+				*/
+			var sleepPicker = new TimePicker(); 
+			WatchUi.pushView(sleepPicker,
+				new TimePickerDelegate("sleepings"),
+				WatchUi.SLIDE_IMMEDIATE);	
 		} else if (item.getId().equals("showSleepings")) {
 			var sleepings = Application.Storage.getValue("sleepings");
 			if (sleepings == null) {
